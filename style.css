@@ -1,0 +1,318 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #2d241f;
+  background: #f8f4ef;
+  line-height: 1.6;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+header {
+  background: #f8f4ef;
+  border-bottom: 1px solid #e5ddd4;
+}
+
+.navbar {
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px 30px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: #2d241f;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-menu a {
+  color: #5c5048;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.nav-menu a:hover {
+  color: #9a633f;
+}
+
+/* =========================
+   GENERAL
+========================= */
+
+section {
+  padding: 100px 30px;
+}
+
+.section-content {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.section-label {
+  color: #9a633f;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+}
+
+h2 {
+  font-size: 42px;
+  line-height: 1.2;
+  margin-bottom: 25px;
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.button {
+  display: inline-block;
+  background: #2d241f;
+  color: white;
+  text-decoration: none;
+
+  padding: 14px 28px;
+  border-radius: 4px;
+
+  font-size: 14px;
+  font-weight: bold;
+
+  transition: 0.3s;
+}
+
+.button:hover {
+  background: #9a633f;
+  transform: translateY(-2px);
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+  min-height: 650px;
+
+  display: flex;
+  align-items: center;
+
+  background:
+    linear-gradient(90deg, rgba(45, 36, 31, 0.9), rgba(45, 36, 31, 0.35)),
+    url("https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1600&q=80");
+
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-content {
+  max-width: 1100px;
+  width: 100%;
+  margin: auto;
+  padding: 0 30px;
+
+  color: white;
+}
+
+.subtitle {
+  font-size: 13px;
+  letter-spacing: 3px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  font-size: 64px;
+  line-height: 1.1;
+  max-width: 700px;
+  margin-bottom: 25px;
+}
+
+.hero-description {
+  max-width: 550px;
+  margin-bottom: 35px;
+  color: #eee;
+}
+
+/* =========================
+   ABOUT
+========================= */
+
+.about {
+  background: #fffaf5;
+}
+
+.about .section-content {
+  max-width: 800px;
+  text-align: center;
+}
+
+.about p:last-child {
+  color: #6c625b;
+}
+
+/* =========================
+   MENU
+========================= */
+
+.menu {
+  background: #f8f4ef;
+}
+
+.menu-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-top: 50px;
+}
+
+.menu-card {
+  background: white;
+  padding: 30px;
+  border: 1px solid #e7ded5;
+  border-radius: 6px;
+
+  transition: 0.3s;
+}
+
+.menu-card:hover {
+  transform: translateY(-5px);
+}
+
+.menu-card h3 {
+  margin-bottom: 12px;
+  font-size: 20px;
+}
+
+.menu-card p {
+  color: #756b64;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.menu-card span {
+  color: #9a633f;
+  font-weight: bold;
+}
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact {
+  background: #2d241f;
+  color: white;
+  text-align: center;
+}
+
+.contact .section-content {
+  max-width: 700px;
+}
+
+.contact .section-label {
+  color: #d5a77e;
+}
+
+.contact p {
+  color: #d8d0ca;
+  margin-bottom: 30px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+  background: #211a17;
+  color: #aaa09a;
+  text-align: center;
+
+  padding: 25px;
+
+  font-size: 13px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 800px) {
+  .nav-menu {
+    gap: 15px;
+  }
+
+  .hero h1 {
+    font-size: 45px;
+  }
+
+  .menu-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  h2 {
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 500px) {
+  .navbar {
+    padding: 18px 20px;
+  }
+
+  .logo {
+    font-size: 16px;
+  }
+
+  .nav-menu {
+    gap: 12px;
+  }
+
+  .nav-menu a {
+    font-size: 12px;
+  }
+
+  section {
+    padding: 70px 20px;
+  }
+
+  .hero {
+    min-height: 600px;
+  }
+
+  .hero-content {
+    padding: 0 20px;
+  }
+
+  .hero h1 {
+    font-size: 38px;
+  }
+
+  .menu-list {
+    grid-template-columns: 1fr;
+  }
+}
