@@ -5,7 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Kopi Senja — Teman di Setiap Senja</title>
+    <title>Kopi Senja — Specialty Coffee & Slow Living</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -13,123 +20,300 @@
 <body>
 
     <!-- NAVBAR -->
-    <header>
+    <header class="header">
         <nav class="navbar">
-            <a href="#" class="logo">KOPI SENJA</a>
+
+            <a href="#" class="logo">
+                KOPI<span>SENJA</span>
+            </a>
 
             <div class="nav-menu">
                 <a href="#tentang">Tentang</a>
                 <a href="#menu">Menu</a>
                 <a href="#kontak">Kontak</a>
             </div>
+
+            <a href="#kontak" class="nav-button">
+                Kunjungi Kami
+            </a>
+
         </nav>
     </header>
 
 
-    <!-- HERO -->
     <main>
 
+        <!-- HERO -->
         <section class="hero">
+
+            <div class="hero-overlay"></div>
+
             <div class="hero-content">
-                <p class="subtitle">KEDAI KOPI LOKAL</p>
 
-                <h1>
-                    Secangkir kopi<br>
-                    untuk menemani senja.
-                </h1>
+                <div class="hero-text">
 
-                <p class="hero-description">
-                    Nikmati kopi pilihan dan suasana hangat
-                    untuk menemani cerita, kerja, maupun waktu santai.
-                </p>
+                    <p class="eyebrow">
+                        SPECIALTY COFFEE • BOGOR
+                    </p>
 
-                <a href="#menu" class="button">
-                    Lihat Menu
-                </a>
+                    <h1>
+                        Temukan tenang
+                        <em>dalam secangkir.</em>
+                    </h1>
+
+                    <p class="hero-description">
+                        Kopi pilihan, suasana hangat, dan waktu yang berjalan
+                        sedikit lebih lambat. Selamat datang di Kopi Senja.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="#menu" class="button button-primary">
+                            Lihat Menu
+                        </a>
+
+                        <a href="#tentang" class="text-link">
+                            Cerita kami →
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="hero-note">
+                    <span>EST. 2020</span>
+                    <span>•</span>
+                    <span>BOGOR</span>
+                </div>
+
             </div>
+
         </section>
 
 
-        <!-- TENTANG -->
-        <section id="tentang" class="about">
-            <div class="section-content">
-                <p class="section-label">TENTANG KAMI</p>
+        <!-- INTRO -->
+        <section class="intro" id="tentang">
 
-                <h2>
-                    Tempat sederhana untuk
-                    cerita yang istimewa.
-                </h2>
+            <div class="section-container intro-grid">
 
-                <p>
-                    Kopi Senja adalah kedai kopi lokal yang hadir
-                    untuk memberikan pengalaman ngopi yang nyaman
-                    dengan kopi berkualitas dan suasana yang hangat.
-                </p>
+                <div>
+                    <p class="section-label">
+                        TENTANG KAMI
+                    </p>
+
+                    <h2>
+                        Bukan sekadar
+                        tempat minum kopi.
+                    </h2>
+                </div>
+
+                <div class="intro-text">
+                    <p>
+                        Kopi Senja lahir dari sebuah hal sederhana:
+                        keinginan untuk menyediakan tempat di mana
+                        orang bisa berhenti sejenak dari kesibukan.
+                    </p>
+
+                    <p>
+                        Kami memilih biji kopi dari berbagai daerah
+                        Indonesia dan menyajikannya dengan penuh perhatian.
+                    </p>
+
+                    <a href="#kontak" class="arrow-link">
+                        Kenali Kopi Senja
+                        <span>↗</span>
+                    </a>
+                </div>
+
             </div>
+
         </section>
 
 
-        <!-- MENU -->
-        <section id="menu" class="menu">
-            <div class="section-content">
+        <!-- FEATURES -->
+        <section class="features">
 
-                <p class="section-label">MENU KAMI</p>
+            <div class="section-container">
 
-                <h2>Favorit di Kopi Senja</h2>
+                <div class="features-grid">
 
-                <div class="menu-list">
-
-                    <div class="menu-card">
-                        <h3>Americano</h3>
-                        <p>Espresso dengan air yang ringan dan bold.</p>
-                        <span>Rp18.000</span>
+                    <div class="feature">
+                        <span class="feature-number">01</span>
+                        <h3>Selected Beans</h3>
+                        <p>
+                            Biji kopi pilihan dari perkebunan terbaik
+                            di Indonesia.
+                        </p>
                     </div>
 
-                    <div class="menu-card">
-                        <h3>Cafe Latte</h3>
-                        <p>Espresso dengan susu creamy yang lembut.</p>
-                        <span>Rp22.000</span>
+                    <div class="feature">
+                        <span class="feature-number">02</span>
+                        <h3>Made With Care</h3>
+                        <p>
+                            Setiap minuman dibuat dengan perhatian
+                            pada detail dan rasa.
+                        </p>
                     </div>
 
-                    <div class="menu-card">
-                        <h3>Cappuccino</h3>
-                        <p>Perpaduan espresso, susu, dan foam.</p>
-                        <span>Rp22.000</span>
-                    </div>
-
-                    <div class="menu-card">
-                        <h3>Matcha Latte</h3>
-                        <p>Matcha lembut dengan susu yang creamy.</p>
-                        <span>Rp24.000</span>
+                    <div class="feature">
+                        <span class="feature-number">03</span>
+                        <h3>Slow Moments</h3>
+                        <p>
+                            Ruang nyaman untuk bekerja, berbincang,
+                            atau sekadar menikmati waktu.
+                        </p>
                     </div>
 
                 </div>
 
             </div>
+
         </section>
 
 
-        <!-- KONTAK -->
-        <section id="kontak" class="contact">
-            <div class="section-content">
+        <!-- MENU -->
+        <section class="menu" id="menu">
 
-                <p class="section-label">KUNJUNGI KAMI</p>
+            <div class="section-container">
+
+                <div class="menu-heading">
+
+                    <div>
+                        <p class="section-label">
+                            MENU PILIHAN
+                        </p>
+
+                        <h2>
+                            Favorit dari bar kami.
+                        </h2>
+                    </div>
+
+                    <p>
+                        Mulai dari kopi klasik hingga minuman
+                        non-kopi untuk menemani harimu.
+                    </p>
+
+                </div>
+
+
+                <div class="menu-list">
+
+                    <article class="menu-card">
+                        <div class="menu-card-top">
+                            <span>01</span>
+                            <span>HOT / ICED</span>
+                        </div>
+
+                        <h3>Americano</h3>
+
+                        <p>
+                            Espresso dengan air mineral,
+                            clean dan bold.
+                        </p>
+
+                        <strong>Rp18.000</strong>
+                    </article>
+
+
+                    <article class="menu-card featured">
+                        <div class="menu-card-top">
+                            <span>02</span>
+                            <span>HOT / ICED</span>
+                        </div>
+
+                        <h3>Cafe Latte</h3>
+
+                        <p>
+                            Espresso dan steamed milk
+                            dengan rasa creamy.
+                        </p>
+
+                        <strong>Rp22.000</strong>
+                    </article>
+
+
+                    <article class="menu-card">
+                        <div class="menu-card-top">
+                            <span>03</span>
+                            <span>HOT</span>
+                        </div>
+
+                        <h3>Cappuccino</h3>
+
+                        <p>
+                            Espresso, susu, dan foam
+                            dengan karakter yang seimbang.
+                        </p>
+
+                        <strong>Rp22.000</strong>
+                    </article>
+
+
+                    <article class="menu-card">
+                        <div class="menu-card-top">
+                            <span>04</span>
+                            <span>ICED</span>
+                        </div>
+
+                        <h3>Matcha Latte</h3>
+
+                        <p>
+                            Matcha premium dengan susu
+                            yang lembut dan creamy.
+                        </p>
+
+                        <strong>Rp24.000</strong>
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- QUOTE -->
+        <section class="quote">
+
+            <div class="section-container">
+
+                <p>
+                    "Kadang yang kita butuhkan
+                    hanyalah kopi yang enak
+                    dan waktu untuk bernapas."
+                </p>
+
+                <span>— KOPI SENJA</span>
+
+            </div>
+
+        </section>
+
+
+        <!-- CONTACT -->
+        <section class="contact" id="kontak">
+
+            <div class="section-container contact-content">
+
+                <p class="section-label">
+                    FIND YOUR WAY HERE
+                </p>
 
                 <h2>
-                    Yuk, ngopi bareng.
+                    Sampai jumpa
+                    di Kopi Senja.
                 </h2>
 
                 <p>
-                    Punya pertanyaan atau ingin melakukan reservasi?
-                    Hubungi kami melalui WhatsApp.
+                    Jl. Pajajaran No. 18, Bogor<br>
+                    Senin — Minggu • 08.00 — 22.00
                 </p>
 
-                <a href="https://wa.me/6285882244181?text=Halo%20Kopi%20Senja%2C%20saya%20ingin%20bertanya%20tentang%20menu."
-                    class="button" target="_blank">
+                <a href="https://wa.me/6281234567890?text=Halo%20Kopi%20Senja%2C%20saya%20ingin%20bertanya."
+                    class="button button-light" target="_blank">
                     Hubungi via WhatsApp
                 </a>
 
             </div>
+
         </section>
 
     </main>
@@ -137,7 +321,23 @@
 
     <!-- FOOTER -->
     <footer>
-        <p>© 2026 Kopi Senja. All rights reserved.</p>
+
+        <div class="footer-content">
+
+            <div class="logo">
+                KOPI<span>SENJA</span>
+            </div>
+
+            <p>
+                Good coffee. Slow moments.
+            </p>
+
+            <p class="copyright">
+                © 2026 Kopi Senja
+            </p>
+
+        </div>
+
     </footer>
 
 
